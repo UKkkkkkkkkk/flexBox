@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            background: deepskyblue;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+        }
+        ul li{
+            line-height: 60px;
+            color: #fff;
+            padding: 0 20px;
+            background: greenyellow;
+        }
+        @media screen and (max-width: 800px){
+            ul{
+                justify-content: center;
+                background: orangered;
+            }
+            ul li{
+                background: yellow;
+            }
+        }
+        @media screen and (max-width: 600px){
+            ul{
+              flex-direction: column;
+            }
+            ul li{
+                background: deeppink;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>首页</li>
+    <li>新闻</li>
+    <li>公司简介</li>
+    <li>联系我们</li>
+    <li>联系我们</li>
+    <li>联系我们</li>
+</ul>
+</body>
+</html>
